@@ -3,6 +3,8 @@ import axios from 'axios';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
+import Header from './components/Header';
+
 function App() {
   const [weather, setWeather] = useState(null);
 
@@ -14,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>AucklandWeather</h1>
+      <Header />
       <MapContainer center={[-36.8485, 174.7633]} zoom={10} style={{ height: "400px", width: "100%" }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
