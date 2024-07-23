@@ -19,8 +19,8 @@ function App() {
       <Header />
       <MapContainer center={[-36.8485, 174.7633]} zoom={10} style={{ height: "400px", width: "100%" }}>
         <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url={`https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=f93871959669d18fa737e45f37288e1f`}
+          attribution='&copy; <a href="https://openweathermap.org/">OpenWeatherMap</a> contributors'
         />
       </MapContainer>
       {weather ? (
